@@ -171,7 +171,7 @@ papers_answers_sentences_df.to_csv(PATH + 'EPIC-QA consumer question QnA Maker o
 
 # write file in EPIC-QA submission format
 papers_answers_sentences_df['q'] = "Q0"
-papers_answers_sentences_df['run_name'] = "Mike Honey EPIC-QA Submission 01"
+papers_answers_sentences_df['run_name'] = "CORONAWHY_1"
 submission_columns = ['question_id', 'q', 'sentence_ids', 'rank', 'score', 'run_name']
 submission_df = papers_answers_sentences_df[submission_columns]
 submission_df.to_csv(PATH + 'EPIC-QA consumer question QnA Maker submission 01.tsv',sep='\t', index=False,header=False)
