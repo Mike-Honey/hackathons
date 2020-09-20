@@ -14,5 +14,6 @@ As my code settles, I plan to add more of the historical data, and will try to k
 
 THIS REPORT IS NOT HEALTH ADVICE - REFER TO YOUR LOCAL HEALTH AUTHORITY.
 
-Link to interactive DataViz
+[Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
+Note page navigation controls are at the bottom, e.g. < 1 of 5 >
