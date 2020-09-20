@@ -165,6 +165,7 @@ papers_answers_sentences_df = papers_answers_sentences_df.sort_values(['question
 papers_answers_sentences_df['rank'] = papers_answers_sentences_df \
     .assign(score=pandas.to_numeric(papers_answers_sentences_df['score'], errors='coerce')) \
     .groupby('question_id')['score'].rank('first', ascending=False)
+papers_answers_sentences_df['rank'] = papers_answers_sentences_df['rank'].astype(int)
 papers_answers_sentences_df = papers_answers_sentences_df.sort_values(['question_id', 'rank'])
 print (papers_answers_sentences_df)
 papers_answers_sentences_df.to_csv(PATH + 'EPIC-QA consumer question QnA Maker output.tsv',sep='\t', index=False)
