@@ -48,7 +48,9 @@ As the solution code settles, more of the historical data will be added. This so
 The UMD dataset from June onwards is presented in it's entirety. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
 
 The data gathered is presented in 6 pages of a Power BI report:
-- **EDA - Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+1. **EDA - Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+2. **EDA - Region, Country Scatter** - choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data avaialable. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or it's entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+3. **EDA - Signal Time Series** - choose any collection of Signals, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Signal. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 
 **Discussion**
 
