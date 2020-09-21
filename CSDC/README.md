@@ -1,8 +1,8 @@
-# The COVID-19 Symptom Data Challenge (CSDC) - EDA solution
+# The COVID-19 Symptom Data Challenge (CSDC) - EDA visualization
 
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
-Note page navigation controls are at the bottom, e.g. < 1 of 5 >
+Note page navigation controls are at the bottom, e.g. < 1 of 6 >
 
 **Data sources:**
 
@@ -12,7 +12,7 @@ This CSDC dataset is broad - this solution is focussed on the non-US dataset of 
 
 **Team Information:**
 
-[Mike Honey](https://www.linkedin.com/in/mikehoney/) leads a data visualization consultancy: [Manga Solutions](https://www.mangasolutions.com). He works with a global portfolio of clients across the healthcare, conservation, social change, finance and education sectors. He draws on 20+ years of experience implementing data integration and data visualisation solutions.
+[Mike Honey](https://www.linkedin.com/in/mikehoney/) leads a data visualization consultancy: [Manga Solutions](https://www.mangasolutions.com). He works with a global portfolio of clients across the healthcare, conservation, social change, finance and education sectors. He draws on 20+ years of experience implementing data integration and data visualization solutions. He was recently awarded a prize by Kaggle for his contribution on the [COVID-19 Open Research Dataset Challenge (CORD-19)](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge), and is an active member of the [CoronaWhy](www.coronawhy.org) data science community.
 
 **Approach:**
 
@@ -24,13 +24,13 @@ In data science terms, this might be called an "Exploratory Data Analysis" (EDA)
 
 Experience across many scenarios and domains has shown that when subject-matter experts are freed to explore a complex dataset using this approach, they can quickly find meaningful insights or be inspired to dig deeper.  Domain experts in public health can quickly compare and contrast survey results from any slice of the survey dataset, helping them quickly understand reported trends.
 
-Use of a fully interactive data visualisation platform gives the opportunity for the broadest possible audience to engage and understand the survey data.  They do not need any technical understanding of the survey's data structure, or any knowledge of visualisation coding or tools.   
+Use of a fully interactive data visualization platform gives the opportunity for the broadest possible audience to engage and understand the survey data.  They do not need any technical understanding of the survey's data structure, or any knowledge of visualization coding or tools.   
 
 **Methods:**
 
 This solution combines a python script to download the dataset (large CSV files, nested web folders), and a Power BI dataset and report for data transformation and analysis.
 
-[Power BI](powerbi.com) is probably the leading data visualisation tool in use today, with over 2.5m users. It has impressive data integration and query capabilities, and provides intuitive, responsive data visualisation results to an untrained audience via a web browser. It includes a free development tool "Power BI Desktop", and solutions like this can be published and shared from a free online account. 
+[Power BI](powerbi.com) is probably the leading data visualization tool in use today, with over 2.5m users. It has impressive data integration and query capabilities, and provides intuitive, responsive data visualization results to an untrained audience via a web browser. It includes a free development tool "Power BI Desktop", and solutions like this can be published and shared from a free online account. 
 
 The Power BI data transformation approach used was to standardise the variations of column names presented into the survey's core list of signals, with attributes added to indicate the specific data source. Technical column names are translated into terms which are less likely to need interpretation by the audience.  The source info for the column names was the "codebook" provided, with some transformation steps to achieve concise, yet easy-to-read attributes.
 
@@ -39,7 +39,7 @@ For example the column **smoothed_pct_cli_weighted** is presented as attributes:
 - Is Weighted: **weighted**
 - Is Smoothed: **smoothed**
 
-This allows a minimal set of visualisation pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.
+This allows a minimal set of visualization pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.
 
 Some sets of the survey signals are understood to be ["Likert scale"](https://en.wikipedia.org/wiki/Likert_scale), and can be considered together. For example there are 4 questions that categorise whether the respondent is worried they are ill with COVID-19
 
@@ -59,6 +59,12 @@ The data gathered is presented in 6 pages of a Power BI report:
 
 **Discussion**
 
+The CSDC datasets represent an exciting opportunity for a rich variety of analysis and understanding on topics relating to public health and the urgent COVID-19 challenge faced around the world. However a typical file for a single month and single aggregation method will present hundreds of columns and 250,000+ rows (100+MB CSV). Data at that scale and complexity is very challenging to analyze using traditional data science tools like python. Authors using those tools will tend to take narrow scopes of particular slices of data, missing adjacent features and relying on assumptions.  The set of authors who can produce useful results will unfortunately be narrow, as results require significant skills, compute resources and time.  Their results will be similarly difficult for others to understand and reproduce.
+
+By contrast, this solution offers interactive visualization built on a solid data integration platform capable of delivering instant results at scale. Multiple audiences can explore the visualizations offered with great flexibility to tune and refine what slice of the dataset they want to explore.  The need only a web browser for instant access - the interface is simple and intuitive.  The deployment infrastructure used is a massive global cloud service, provided for free by Microsoft. 
+
+Therefore this solution can engage a far broader set of subject matter experts, skilled in public health and with local knowledge, but perhaps lacking the skills, resources and time to interrogate the dataset using traditional data science tools.
+
 **Relevant figures and graphs**
 
 **Discussion and 10 slide presentation**
@@ -69,4 +75,4 @@ The data gathered is presented in 6 pages of a Power BI report:
 **Website link**
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
-Note page navigation controls are at the bottom, e.g. < 1 of 5 >
+Note page navigation controls are at the bottom, e.g. < 1 of 6 >
