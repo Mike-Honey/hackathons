@@ -2,7 +2,7 @@
 
 https://www.symptomchallenge.org/
 
-This challenge is quite broad - this solution is focussed on the non-US dataset of survey data produced by University of Maryland (UMD). 
+This challenge is broad - this solution is focussed on the non-US dataset of survey data produced by University of Maryland (UMD). 
 
 This solution combines a python script to download the dataset (large CSV files or complex API calls), and a Power BI dataset and report for data transformation and analysis.
 
