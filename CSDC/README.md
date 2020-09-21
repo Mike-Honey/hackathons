@@ -1,8 +1,14 @@
-# CSDC - The COVID-19 Symptom Data Challenge
+# The COVID-19 Symptom Data Challenge (CSDC) - EDA solution
+
+[Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
+
+Note page navigation controls are at the bottom, e.g. < 1 of 5 >
+
+**Data sources:**
 
 https://www.symptomchallenge.org/
 
-This CSDC dataset is broad - this solution is focussed on the non-US dataset of survey data produced by University of Maryland (UMD). It is described in detail at the link above.
+This CSDC dataset is broad - this solution is focussed on the non-US dataset of survey data produced by University of Maryland (UMD). It is described in detail at the link above.  The codebook presented on that site is used to translate the dataset structures into easy-to-read attributes.
 
 **Team Information:**
 
@@ -18,20 +24,23 @@ In data science terms, this might be called an "Exploratory Data Analysis" (EDA)
 
 Experience across many scenarios and domains has shown that when subject-matter experts are freed to explore a complex dataset using this approach, they can quickly find meaningful insights or be inspired to dig deeper.  Domain experts in public health can quickly compare and contrast survey results from any slice of the survey dataset, helping them quickly understand reported trends.
 
+Use of a fully interactive data visualisation platform gives the opportunity for the broadest possible audience to engage and understand the survey data.  They do not need any technical understanding of the survey's data structure, or any knowledge of visualisation coding or tools.   
+
 **Approach:**
 
 This solution combines a python script to download the dataset (large CSV files, nested web folders), and a Power BI dataset and report for data transformation and analysis.
 
-The Power BI data transformation approach is to standardise the variations of column names presented into the survey's core list of signals, with attributes to indicate the source. 
+The Power BI data transformation approach is to standardise the variations of column names presented into the survey's core list of signals, with attributes to indicate the source. Technical column names are translated into terms which are less likely to need interpretation by the audience.  The source info for the column names was the "codebook" provided, with some transformation steps to achieve concise, yet easy-to-read attributes.
 
 For example the column **pct_cli_weighted** from files in the **smoothed** subfolder is presented as:
 - Signal: COVID-19-like illness
 - Is Weighted: Weighted
 - Is Smoothed: Smoothed
 
-This allows a minimal set of visualisation pages to cover all the complexity of the dataset, where the audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results.  
+This allows a minimal set of visualisation pages to cover all the complexity of the dataset, where the audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.    
 
 As the solution code settles, more of the historical data will be added. This solution will also be refreshed as further (more recent) data is released.
+
 
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
