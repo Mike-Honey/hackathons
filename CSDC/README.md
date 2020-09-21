@@ -45,7 +45,10 @@ As the solution code settles, more of the historical data will be added. This so
 
 **Results**
 
-The UMD dataset from June onwards is presented in it's entirety. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (  
+The UMD dataset from June onwards is presented in it's entirety. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
+
+The data gathered is presented in 6 pages of a Power BI report:
+- **EDA - Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 
 **Discussion**
 
