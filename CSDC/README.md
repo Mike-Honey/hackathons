@@ -39,7 +39,7 @@ For example the column **smoothed_pct_cli_weighted** is presented as attributes:
 - Is Weighted: **weighted**
 - Is Smoothed: **smoothed**
 
-This allows a minimal set of visualization pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.
+This allows a minimal set of visualization pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.  The "sync slicers" feature is used extensively to pass each user's slicer selections across the pages, where appropriate. For example if a particular date range is specified using the slicer on one page, all the other pages will automatically synchronize to that same date range.  This provides a smooth and consistent user experience. Refreshing the web browser or closing and re-entering the link will restore all the default selections.
 
 Some sets of the survey signals are understood to be ["Likert scale"](https://en.wikipedia.org/wiki/Likert_scale), and can be considered together. For example there are 4 questions that categorise whether the respondent is worried they are ill with COVID-19. Likert scale questions are tagged by their set during the data integration, and a specific page was designed to appropriately present them.
 
@@ -63,11 +63,14 @@ The CSDC datasets represent an exciting opportunity for a rich variety of analys
 
 By contrast, this solution offers interactive visualization built on a solid data integration platform capable of delivering instant results at scale. Multiple audiences can explore the visualizations offered with great flexibility to tune and refine what slice of the dataset they want to explore.  The need only a web browser for instant access - the interface is simple and intuitive.  The deployment infrastructure used is a massive global cloud service, provided for free by Microsoft. 
 
-Therefore this solution can engage a far broader set of subject matter experts, skilled in public health and with local knowledge, but perhaps lacking the skills, resources and time to interrogate the dataset using traditional data science tools.
+Therefore this solution can engage and inform a far broader set of subject matter experts, skilled in public health and with local knowledge, but perhaps lacking the skills, resources and time to interrogate the dataset using traditional data science tools.
 
 **Relevant figures and graphs**
 
+
+
 **Discussion and 10 slide presentation**
+
 
 **Github link**
 [https://github.com/Mike-Honey/hackathons/CSDC/](https://github.com/Mike-Honey/hackathons/CSDC/)
