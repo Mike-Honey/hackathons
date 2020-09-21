@@ -41,7 +41,7 @@ For example the column **smoothed_pct_cli_weighted** is presented as attributes:
 
 This allows a minimal set of visualization pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.
 
-Some sets of the survey signals are understood to be ["Likert scale"](https://en.wikipedia.org/wiki/Likert_scale), and can be considered together. For example there are 4 questions that categorise whether the respondent is worried they are ill with COVID-19
+Some sets of the survey signals are understood to be ["Likert scale"](https://en.wikipedia.org/wiki/Likert_scale), and can be considered together. For example there are 4 questions that categorise whether the respondent is worried they are ill with COVID-19. Likert scale questions are tagged by their set during the data integration, and a specific page was designed to appropriately present them.
 
 As the solution code settles, more of the historical data will be added. This solution will also be refreshed as further (more recent) data is released.
 
