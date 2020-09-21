@@ -12,7 +12,7 @@ This CSDC dataset is broad - this solution is focussed on the non-US dataset of 
 
 **Team Information:**
 
-Mike Honey leads a data visualization consultancy: [Manga Solutions](https://www.mangasolutions.com). He works with a global portfolio of clients across the healthcare, conservation, social change, finance and education sectors.
+[Mike Honey](https://www.linkedin.com/in/mikehoney/) leads a data visualization consultancy: [Manga Solutions](https://www.mangasolutions.com). He works with a global portfolio of clients across the healthcare, conservation, social change, finance and education sectors. He draws on 20+ years of experience implementing data integration and data visualisation solutions.
 
 **Approach:**
 
@@ -34,12 +34,14 @@ This solution combines a python script to download the dataset (large CSV files,
 
 The Power BI data transformation approach used was to standardise the variations of column names presented into the survey's core list of signals, with attributes added to indicate the specific data source. Technical column names are translated into terms which are less likely to need interpretation by the audience.  The source info for the column names was the "codebook" provided, with some transformation steps to achieve concise, yet easy-to-read attributes.
 
-For example the column **pct_cli_weighted** from files in the **smoothed** subfolder is presented as:
+For example the column **smoothed_pct_cli_weighted** is presented as attributes:
 - Signal: **COVID-19-like illness**
 - Is Weighted: **weighted**
 - Is Smoothed: **smoothed**
 
-This allows a minimal set of visualisation pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.    
+This allows a minimal set of visualisation pages to cover all the complexity of the dataset. The audience can use interactive "Slicers" e.g. to instantly switch between smoothed and raw signal results, switch or compare Signals and so on.
+
+Some sets of the survey signals are understood to be ["Likert scale"](https://en.wikipedia.org/wiki/Likert_scale), and can be considered together. For example there are 4 questions that categorise whether the respondent is worried they are ill with COVID-19
 
 As the solution code settles, more of the historical data will be added. This solution will also be refreshed as further (more recent) data is released.
 
@@ -51,6 +53,9 @@ The data gathered is presented in 6 pages of a Power BI report:
 1. **EDA - Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 2. **EDA - Region, Country Scatter** - choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data avaialable. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or it's entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 3. **EDA - Signal Time Series** - choose any collection of Signals, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Signal. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+4. **EDA - Likert Signals** - choose any collection of Likert scale Signals (e.g. "mask use"), then choose a Country or Region to generate a time series (column chart). Each series represents a specific Signal, sorted in order of their Likert scale sequence. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  The raw signal results typically add to 100% for a single date, but smoothed and weighted results may not, as a result of the calculations applied by the survey publishers.
+5. **EDA - Age Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents an Age Bucket, including the "overall" bucket. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+6. **EDA - Gender Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Gender, including the "overall" category. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 
 **Discussion**
 
