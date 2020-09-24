@@ -1,10 +1,12 @@
-# The COVID-19 Symptom Data Challenge (CSDC) - CSDC Global Explorer
+# CSDC Global Explorer
 
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
 Note page navigation controls are at the bottom, e.g. < 1 of 6 >
 
 **Data sources:**
+
+The COVID-19 Symptom Data Challenge (CSDC):
 
 https://www.symptomchallenge.org/
 
