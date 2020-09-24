@@ -10,7 +10,7 @@ The COVID-19 Symptom Data Challenge (CSDC):
 
 https://www.symptomchallenge.org/
 
-This CSDC dataset is broad - this solution is focussed on the non-US dataset of survey data produced by University of Maryland (UMD). It is described in detail at the link above.  The codebook presented on that site is used to translate the dataset structures into easy-to-read attributes.
+This CSDC dataset is broad - this solution is focussed on the Global (non-US) dataset of survey data produced by University of Maryland (UMD). It is described in detail at the link above.  The codebook presented on that site is used to translate the dataset structures into easy-to-read attributes.
 
 **Team Information:**
 
@@ -49,7 +49,7 @@ As the solution code settles, more of the historical data will be added. This so
 
 **Results**
 
-The UMD dataset from June onwards is presented in it's entirety as the **CSDC Global Explorer**. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
+The UMD Global dataset from June onwards is presented in it's entirety in the **CSDC Global Explorer**. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
 
 The data gathered is presented in 6 pages of a Power BI report:
 1. **Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
