@@ -1,4 +1,4 @@
-# The COVID-19 Symptom Data Challenge (CSDC) - EDA visualization
+# The COVID-19 Symptom Data Challenge (CSDC) - CSDC Global Explorer
 
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
@@ -16,7 +16,7 @@ This CSDC dataset is broad - this solution is focussed on the non-US dataset of 
 
 **Approach:**
 
-As the dataset is vast and complex, the aim of this solution is to empower those with public health expertise to easily explore and analyse interactively. Power BI is an interactive tool, so an untrained user can use the report pages to explore almost any aspect of the dataset, using just a web browser, with response times in seconds. 
+As the dataset is vast and complex, the aim of the **CSDC Global Explorer** solution is to empower those with public health expertise to easily explore and analyse interactively. Power BI is an interactive tool, so an untrained user can use the report pages to explore almost any aspect of the dataset, using just a web browser, with response times in seconds. 
 
 In data science terms, this might be called an "Exploratory Data Analysis" (EDA), but this solution offers a far broader scope than could ever be achieved with a custom-coded EDA. 
 
@@ -47,21 +47,21 @@ As the solution code settles, more of the historical data will be added. This so
 
 **Results**
 
-The UMD dataset from June onwards is presented in it's entirety. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
+The UMD dataset from June onwards is presented in it's entirety as the **CSDC Global Explorer**. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
 
 The data gathered is presented in 6 pages of a Power BI report:
-1. **EDA - Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-2. **EDA - Region, Country Scatter** - choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data avaialable. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or it's entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-3. **EDA - Signal Time Series** - choose any collection of Signals, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Signal. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-4. **EDA - Likert Signals** - choose any collection of Likert scale Signals (e.g. "mask use"), then choose a Country or Region to generate a time series (column chart). Each series represents a specific Signal, sorted in order of their Likert scale sequence. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  The raw signal results typically add to 100% for a single date, but smoothed and weighted results may not, as a result of the calculations applied by the survey publishers.
-5. **EDA - Age Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents an Age Bucket, including the "overall" bucket. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-6. **EDA - Gender Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Gender, including the "overall" category. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+1. **Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+2. **Region, Country Scatter** - choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data avaialable. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or it's entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+3. **Signal Time Series** - choose any collection of Signals, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Signal. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+4. **Likert Signals** - choose any collection of Likert scale Signals (e.g. "mask use"), then choose a Country or Region to generate a time series (column chart). Each series represents a specific Signal, sorted in order of their Likert scale sequence. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  The raw signal results typically add to 100% for a single date, but smoothed and weighted results may not, as a result of the calculations applied by the survey publishers.
+5. **Age Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents an Age Bucket, including the "overall" bucket. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+6. **Gender Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Gender, including the "overall" category. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 
 **Discussion**
 
 The CSDC datasets represent an exciting opportunity for a rich variety of analysis and understanding on topics relating to public health and the urgent COVID-19 challenge faced around the world. However a typical file for a single month and single aggregation method will present hundreds of columns and 250,000+ rows (100+MB CSV). Data at that scale and complexity is very challenging to analyze using traditional data science tools like python. Authors using those tools will tend to take narrow scopes of particular slices of data, missing adjacent features and relying on assumptions.  The set of authors who can produce useful results will unfortunately be narrow, as results require significant skills, compute resources and time.  Their results will be similarly difficult for others to understand and reproduce.
 
-By contrast, this solution offers interactive visualization built on a solid data integration platform capable of delivering instant results at scale. Multiple audiences can explore the visualizations offered with great flexibility to tune and refine what slice of the dataset they want to explore.  The need only a web browser for instant access - the interface is simple and intuitive.  The deployment infrastructure used is a massive global cloud service, provided for free by Microsoft. 
+By contrast, the **CSDC Global Explorer** solution offers interactive visualization built on a solid data integration platform capable of delivering instant results at scale. Multiple audiences can explore the visualizations offered with great flexibility to tune and refine what slice of the dataset they want to explore.  The need only a web browser for instant access - the interface is simple and intuitive.  The deployment infrastructure used is a massive global cloud service, provided for free by Microsoft. 
 
 Therefore this solution can engage and inform a far broader set of subject matter experts, skilled in public health and with local knowledge, but perhaps lacking the skills, resources and time to interrogate the dataset using traditional data science tools.
 
