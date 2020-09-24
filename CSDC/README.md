@@ -85,7 +85,7 @@ The Power BI report file includes daily data spanning over 3 months, for the int
 - 4 Age Buckets
 - 4 Gender classifications
 - With or without Smoothing
-- With or without Weidghting
+- With or without Weighting
 
 In total there were over 127m individual observations collected. This is stored in a Power BI Report file (PBIX format) of just over 250MB.  That was published to the Power BI Web service (www.powerbi.com) and shared using the "Publish to Web" feature (free shared infrastructure).
 
