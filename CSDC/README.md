@@ -2,7 +2,7 @@
 
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
-Note page navigation controls are at the bottom, e.g. < 1 of 6 >
+Note page navigation controls are at the bottom, e.g. < 1 of 7 >
 
 
 **Data sources:**
@@ -12,6 +12,13 @@ The COVID-19 Symptom Data Challenge (CSDC):
 https://www.symptomchallenge.org/
 
 This CSDC dataset is broad - this solution is focussed on the Global (non-US) dataset of survey data produced by University of Maryland (UMD). It is described in detail at the link above.  The codebook presented on that site is used to translate the dataset structures into easy-to-read attributes.
+
+
+COVID-19 Open Data:
+
+https://github.com/GoogleCloudPlatform/covid-19-open-data
+
+Daily time-series data related to COVID-19 for 50+ countries, with most detailed at the state/region level.  Note not all Countries & Regions listed in the Symptom data are matched in the COVID-19 Open Data. 
 
 
 **Team Information:**
@@ -52,6 +59,16 @@ Some sets of the survey signals are understood to be ["Likert scale"](https://en
 
 As the solution code settles, more of the historical data will be added. This solution will also be refreshed as further (more recent) data is released.
 
+The Power BI report file includes daily data spanning over 3 months, for the intersection of:
+- 53 Signals
+- 1,793 Region & Country combinations
+- 4 Age Buckets
+- 4 Gender classifications
+- With or without Smoothing
+- With or without Weighting
+
+In total there were over 127m individual observations collected. This is stored in a Power BI Report file (PBIX format) of just over 300MB.  That was published to the Power BI Web service (www.powerbi.com) and shared using the "Publish to Web" feature (free shared infrastructure).
+
 
 **Results**
 
@@ -77,21 +94,13 @@ Therefore this solution can engage and inform a far broader set of subject matte
 
 **Relevant figures and graphs**
 
-For sample output, refer to either the slide presentation or Website link (below).
+[![View and interact with the report in full-screen](https://github.com/Mike-Honey/hackathons/raw/master/CSDC/CSDC_EDA_1.png)](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
-The Power BI report file includes daily data spanning over 3 months, for the intersection of:
-- 53 Signals
-- 1,793 Region & Country combinations
-- 4 Age Buckets
-- 4 Gender classifications
-- With or without Smoothing
-- With or without Weighting
-
-In total there were over 127m individual observations collected. This is stored in a Power BI Report file (PBIX format) of just over 250MB.  That was published to the Power BI Web service (www.powerbi.com) and shared using the "Publish to Web" feature (free shared infrastructure).
+For more detailed output, refer to either the slide presentation or Website link (below).
 
 
 **Discussion and 10 slide presentation**
-
+[Link to Presentation](https://github.com/Mike-Honey/hackathons/raw/master/CSDC/COVID-19%20Symptom%20Data%20Challenge%20-%20Global%20Explorer.pptx)
 
 **Github link**
 [https://github.com/Mike-Honey/hackathons/CSDC/](https://github.com/Mike-Honey/hackathons/CSDC/)
