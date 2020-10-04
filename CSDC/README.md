@@ -75,12 +75,13 @@ In total there were over 127m individual observations collected. This is stored 
 The UMD Global dataset from June onwards is presented in it's entirety in the **CSDC Global Explorer**. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
 
 The data gathered is presented in 6 pages of a Power BI report:
-1. **Region, Country Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-2. **Region, Country Scatter** - choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data avaialable. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or it's entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-3. **Signal Time Series** - choose any collection of Signals, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Signal. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-4. **Likert Signals** - choose any collection of Likert scale Signals (e.g. "mask use"), then choose a Country or Region to generate a time series (column chart). Each series represents a specific Signal, sorted in order of their Likert scale sequence. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  The raw signal results typically add to 100% for a single date, but smoothed and weighted results may not, as a result of the calculations applied by the survey publishers.
-5. **Age Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents an Age Bucket, including the "overall" bucket. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
-6. **Gender Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Gender, including the "overall" category. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+1. **Region, Country Time Series** - choose any COVID-19 measurement, choose any Signal, then choose any Country or Regions to generate a time series (line chart).  Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+2. **Region, Country (multi) Time Series** - choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+3. **Region, Country Scatter** - choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data avaialable. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or it's entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+4. **Signal Time Series** - choose any collection of Signals, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Signal. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+5. **Likert Signals** - choose any collection of Likert scale Signals (e.g. "mask use"), then choose a Country or Region to generate a time series (column chart). Each series represents a specific Signal, sorted in order of their Likert scale sequence. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  The raw signal results typically add to 100% for a single date, but smoothed and weighted results may not, as a result of the calculations applied by the survey publishers.
+6. **Age Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents an Age Bucket, including the "overall" bucket. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
+7. **Gender Time Series** - choose any Signal, then choose a Country or Region to generate a time series (line chart). Each series/line represents a Gender, including the "overall" category. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 
 
 **Discussion**
@@ -90,6 +91,8 @@ The CSDC datasets represent an exciting opportunity for a rich variety of analys
 By contrast, the **CSDC Global Explorer** solution offers interactive visualization built on a solid data integration platform capable of delivering instant results at scale. Multiple audiences can explore the visualizations offered with great flexibility to tune and refine what slice of the dataset they want to explore.  The need only a web browser for instant access - the interface is simple and intuitive.  The deployment infrastructure used is a massive global cloud service, provided for free by Microsoft. 
 
 Therefore this solution can engage and inform a far broader set of subject matter experts, skilled in public health and with local knowledge, but perhaps lacking the skills, resources and time to interrogate the dataset using traditional data science tools.
+
+In the sample scenario, the COVID-19 cases and symptom survey results for the state of Victoria, Australia can be quickly analysed and understood.  When cases rose during July and August, there was a strong "lockdown" imposed as the public health response, which was succesful in supressing the outbreak.  The symptom survey results confirm the population mostly complied with the public health mandates. An untrained user of this solution can quickly explore the signals, slicing the data and compare to other regions. 
 
 
 **Relevant figures and graphs**
@@ -102,8 +105,10 @@ For more detailed output, refer to either the slide presentation or Website link
 **Discussion and 10 slide presentation**
 [Link to Presentation](https://github.com/Mike-Honey/hackathons/raw/master/CSDC/COVID-19%20Symptom%20Data%20Challenge%20-%20Global%20Explorer.pptx)
 
+
 **Github link**
 [https://github.com/Mike-Honey/hackathons/CSDC/](https://github.com/Mike-Honey/hackathons/CSDC/)
+
 
 **Website link**
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
