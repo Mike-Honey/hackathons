@@ -4,6 +4,8 @@
 
 Note page navigation controls are at the bottom, e.g. < 1 of 7 >
 
+[![View and interact with the report in full-screen](https://github.com/Mike-Honey/hackathons/raw/master/CSDC/CSDC_EDA_1.png)](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
+
 
 **Data sources:**
 
