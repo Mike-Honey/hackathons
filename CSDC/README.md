@@ -76,7 +76,7 @@ In total there were over 127m individual observations collected. This is stored 
 
 The UMD Global dataset from June onwards is presented in its entirety in the **CSDC Global Explorer**. Results are available for every country and region, for the entire date range or any subset, for every signal, every demographic attribute (age bucket or gender), and every calculation method (smoothed or not, weighted or not).
 
-The data gathered is presented in 6 pages of a Power BI report:
+The data gathered is presented in 7 pages of a Power BI report:
 1. **Region, Country Time Series** - choose any COVID-19 measurement, choose any Signal, then choose any Country or Regions to generate a time series (line chart).  Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 2. **Region, Country (multi) Time Series** - choose any COVID-19 measurement, choose any Signal, then choose any collection of Countries or Regions to generate a time series (line chart). Each series/line represents a Country or Region. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
 3. **Region, Country Scatter** - choose any COVID-19 measurement, choose any 2 Signals: Y-axis and X-Axis, then choose any collection of Countries or Regions to generate a scatter/bubble chart. Each bubble represents a country or region, sized for the number of respondents (for Y-axis Signal). The chart initially shows the last data available. A **play** control at the bottom can be used to animate by day, or can be dragged to a specific date. Selecting a bubble (or its entry in the legend) highlights the track of that series over time. Additional slicers support filtering by Date range, Age Bucket, Gender, Is Weighted or Is Smoothed.  
@@ -115,4 +115,4 @@ For more detailed output, refer to either the slide presentation or Website link
 **Website link**
 [Link to interactive DataViz](https://app.powerbi.com/view?r=eyJrIjoiZGYxZTAyZTktOGE2Yi00Mjc5LWIzMGMtNzRkMDU1ZTY1NTNhIiwidCI6ImRjMWYwNGY1LWMxZTUtNDQyOS1hODEyLTU3OTNiZTQ1YmY5ZCIsImMiOjEwfQ%3D%3D)
 
-Note page navigation controls are at the bottom, e.g. < 1 of 6 >
+Note page navigation controls are at the bottom, e.g. < 1 of 7 >
