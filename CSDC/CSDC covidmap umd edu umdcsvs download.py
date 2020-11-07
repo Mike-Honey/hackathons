@@ -1,8 +1,13 @@
-from urllib.request import Request, urlopen, urlretrieve
+
 from bs4 import BeautifulSoup
+import gzip
+import os
 from pathlib import Path
+import re
 import requests
+import shutil
 from urllib.parse import urlparse
+from urllib.request import Request, urlopen, urlretrieve
 
 # url = 'https://covidmap.umd.edu/umdcsvs/'
 # ext = 'csv'
@@ -15,6 +20,17 @@ from urllib.parse import urlparse
 
 # for file in listFD(url, ext):
 #     print (file)
+
+def gunzip(gzipped_file_name, work_dir):
+    "gunzip the given gzipped file"
+
+    # see warning about filename
+    filename = os.path.split(gzipped_file_name)[-1]
+    filename = re.sub(r"\.gz$", "", filename, flags=re.IGNORECASE)
+
+    with gzip.open(gzipped_file_name, 'rb') as f_in:  # <<========== extraction happens here
+        with open(os.path.join(work_dir, filename), 'wb') as f_out:
+            shutil.copyfileobj(f_in, f_out)
     
 def read_url(url, local_path):
     url = url.replace(" ","%20")
@@ -41,7 +57,7 @@ def read_url(url, local_path):
             read_url(url_new, local_path)
         # if file_name.endswith('.csv'):
         #     print('url_new csv: ' + url_new)
-        if file_name.endswith('..>') or file_name.endswith('.csv'):
+        if file_name.endswith('..>') or file_name.endswith('.csv') or file_name.endswith('.gz'):
             url_path_to_file = urlparse(url).path
             print ('url_path_to_file: ' + url_path_to_file)
             url_wo_file = urlparse(url).scheme + '://' + urlparse(url).netloc + urlparse(url).path
@@ -49,8 +65,11 @@ def read_url(url, local_path):
             file_href = i.extract().get('href')
             print('file_href: ' + file_href)
             r = requests.get(url_wo_file + file_href, stream = True) 
-            with open(local_path + url_path_to_file + file_href,"wb") as each_csv: 
-                each_csv.write(r.content)
+            with open(local_path + url_path_to_file + file_href,"wb") as each_file: 
+                each_file.write(r.content)
+                if file_href.endswith(".gz"):
+                    gunzip(local_path + url_path_to_file + file_href, local_path + url_path_to_file)
+
 
 read_url("https://covidmap.umd.edu/umdcsvs/", 'C:/Dev/CSDC/')
 
